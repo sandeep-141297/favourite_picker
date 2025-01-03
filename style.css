@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #fff;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Urbanist", sans-serif;
+    background-color: #161e1d;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+p,
+li {
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+    font-family: "Urbanist", sans-serif;
+    line-height: 1.6;
+}
+
+#myList {
+    list-style: none;
+    padding: 0;
+}
+
+#myList li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#myList li:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#listValue {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #bab88c;
+}

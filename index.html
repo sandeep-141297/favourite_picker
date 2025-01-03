@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourite Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p>Which programming Language you like the most?</p>
+    <br />
+    <ul id="myList">
+      <li>🎉 JavaScript 🎉</li>
+      <li>🎈 PHP 🎈</li>
+      <li>🎊 Python 🎊</li>
+      <li>🎁 Coldfusion 🎁</li>
+    </ul>
+    <p id="listValue"></p>
+
+    <script>
+        const getListItems = (event) => {
+            // console.log(event.target);
+            const listItem = event.target;
+            listItem.style.transform = "rotateY(360deg)"; // Add a rotation animation
+            setTimeout(() => {
+            listItem.style.transform = "rotateY(0deg)"; // Reset rotation after a delay
+            }, 500);
+            
+            document.getElementById("listValue").innerText = `Your favourite programming language is ${listItem.innerText}`;
+        };
+
+        document.getElementById("myList").addEventListener("click", getListItems);
+    </script>
+</body>
+
+</html>
